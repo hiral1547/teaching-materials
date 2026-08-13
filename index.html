@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Minimal academic teaching portfolio." />
+    <title>Teaching Materirals | Hiral Patel</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80">
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top bg-cream">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#home"
+          ><span class="brand-mark">HP</span> Hiral Patel</a
+        >
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto gap-lg-2">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#materials">Materials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header id="home" class="hero py-3">
+      <div class="container py-lg-3">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-lg-7">
+            <p class="eyebrow mb-3">Academic Teaching</p>
+            <h1 class="display-3 fw-bold">
+              Teaching with <span>purpose.</span>
+            </h1>
+            <p class="lead text-secondary mt-3 mb-4">
+              Lecturer and educator focused on clear concepts, practical
+              learning, and useful digital resources.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <a href="#materials" class="btn btn-accent rounded-pill px-4"
+                >Explore Materials <i class="bi bi-arrow-down ms-1"></i
+              ></a>
+              <a
+                href="assets/Your-Name-CV.pdf"
+                class="btn btn-outline-accent rounded-pill px-4"
+                download
+                >Download CV</a
+              >
+            </div>
+            <div class="small text-secondary mt-4">
+              <i class="bi bi-mortarboard me-1"></i> Lecturer
+              <span class="mx-2">•</span>
+              <i class="bi bi-building me-1"></i> Computer Engineering
+              Department
+              <span class="mx-2">•</span>
+              <i class="bi bi-geo-alt me-1"></i> Neotech Institute of Technology
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="profile-card p-2 bg-white text-center">
+              <!-- Profile Image -->
+              <div class="mb-4">
+                <img
+                  src="assets/profile.png"
+                  alt="Hiral Patel"
+                  width="190"
+                  height="190"
+                  class="img-fluid rounded-circle object-fit-cover"
+                />
+              </div>
+
+              <!-- Profile Information -->
+              <p class="eyebrow mb-2">Lecturer • Educator</p>
+
+              <h2 class="h3 mb-2">Hiral Patel</h2>
+
+              <p class="text-secondary mb-4">
+                Department of Computer Engineering
+              </p>
+
+              <!-- Tags -->
+              <div class="d-flex flex-wrap justify-content-center gap-2">
+                <span class="badge-soft">Teaching</span>
+                <span class="badge-soft">Labs</span>
+                <span class="badge-soft">Digital Learning</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="materials" class="py-5 bg-sand">
+        <div class="container py-lg-4">
+          <div class="row align-items-end g-3">
+            <div class="col-lg-7">
+              <p class="eyebrow">01 / Materials</p>
+              <h2 class="section-title">
+                Teaching resources, <span>in one place.</span>
+              </h2>
+            </div>
+            <div class="col-lg-5">
+              <p class="text-secondary mb-0">
+                Filter or search lecture notes, PDFs, lab manuals, images, and
+                videos.
+              </p>
+            </div>
+          </div>
+
+          <div class="row g-2 mt-4 align-items-center">
+            <div class="col-lg-8">
+              <div class="d-flex flex-wrap gap-2" id="filterButtons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="notes">
+                  Lecture Notes
+                </button>
+                <button class="filter-btn" data-filter="pdf">PDF Notes</button>
+                <button class="filter-btn" data-filter="lab">
+                  Lab Manuals
+                </button>
+                <button class="filter-btn" data-filter="image">Images</button>
+                <button class="filter-btn" data-filter="video">Videos</button>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="input-group">
+                <span class="input-group-text bg-white border-end-0"
+                  ><i class="bi bi-search"></i
+                ></span>
+                <input
+                  type="search"
+                  id="materialSearch"
+                  class="form-control border-start-0"
+                  placeholder="Search materials..."
+                  aria-label="Search materials"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div id="materialsGrid" class="row g-3 mt-2"></div>
+          <div id="noResults" class="text-center py-5 d-none">
+            <i class="bi bi-search fs-2"></i>
+            <h3 class="h5 mt-3">No materials found</h3>
+            <p class="text-secondary">Try another category or search term.</p>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="py-5 bg-sage">
+        <div class="container py-lg-4">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-8">
+              <p class="eyebrow">02 / Contact</p>
+              <h2 class="section-title mb-2">Let's connect.</h2>
+              <p class="text-secondary mb-0">
+                For academic opportunities, collaborations, teaching
+                discussions, or further information.
+              </p>
+            </div>
+            <div class="col-lg-4">
+              <div class="d-grid gap-2">
+                <a
+                  href="mailto:your.email@example.com"
+                  class="btn btn-accent rounded-pill"
+                  >Email Me <i class="bi bi-envelope ms-1"></i
+                ></a>
+                <a href="#" class="btn btn-outline-accent rounded-pill"
+                  >LinkedIn <i class="bi bi-linkedin ms-1"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-4 border-top">
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between gap-2 small text-secondary"
+      >
+        <span>© <span id="year"></span> Hiral Patel</span>
+        <span>Teaching • Learning • Impact</span>
+      </div>
+    </footer>
+
+    <div class="modal fade" id="previewModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content border-0 rounded-4 overflow-hidden">
+          <div class="modal-header">
+            <div>
+              <small class="text-secondary" id="previewType"></small>
+              <h5 class="modal-title" id="previewTitle">Preview</h5>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-0" id="previewBody"></div>
+          <div class="modal-footer">
+            <a
+              id="downloadPreview"
+              class="btn btn-accent rounded-pill"
+              href="#"
+              download
+              >Download</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
