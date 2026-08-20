@@ -102,7 +102,7 @@ $(function () {
     if (["png", "jpg", "jpeg", "gif", "webp"].includes(ext)) {
       body = `<div class="p-3 bg-light"><img src="${item.file}" class="preview-image" alt="${item.title}"></div>`;
     } else if (ext === "pdf") {
-      body = `<iframe class="preview-frame" src="${item.file}#toolbar=0" title="${item.title}"></iframe>`;
+      body = `<video class="preview-frame" src="${item.file}#toolbar=0" title="${item.title}"></video>`;
     } else if (["mp4", "webm"].includes(ext)) {
       body = `<div class="p-3 bg-dark"><video class="w-100" controls style="max-height:70vh"><source src="${item.file}"></video></div>`;
     } else {
