@@ -327,17 +327,17 @@ $(function () {
       // --------------------------------
       else if (ext === "pdf") {
         body = `
-          <iframe
-            class="preview-frame"
-            src="${item.file}#toolbar=0"
-            title="${item.title}"
-            style="
-              width:100%;
-              height:70vh;
-              border:0;
-            "
-          ></iframe>
-        `;
+    <iframe
+      src="${item.file}"
+      title="${item.title}"
+      style="
+        width: 100%;
+        height: 70vh;
+        border: none;
+        display: block;
+      "
+    ></iframe>
+  `;
       }
 
       // --------------------------------
