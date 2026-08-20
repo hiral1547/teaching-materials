@@ -10,7 +10,7 @@ $(function () {
         "Solved question on Turing Machines, including concepts, constructions and problem-solving examples.",
       meta: "PDF • 13 pages",
       icon: "bi-file-earmark-text",
-      file: "materials/lecture-notes/toc/Turing Machine (TM) solved Qs.pdf",
+      file: "materials/lecture-notes/toc/turing_machine.pdf",
     },
     {
       id: 2,
