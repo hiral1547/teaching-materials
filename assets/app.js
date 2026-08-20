@@ -102,9 +102,31 @@ $(function () {
     if (["png", "jpg", "jpeg", "gif", "webp"].includes(ext)) {
       body = `<div class="p-3 bg-light"><img src="${item.file}" class="preview-image" alt="${item.title}"></div>`;
     } else if (ext === "pdf") {
-      body = `<video class="preview-frame" src="${item.file}#toolbar=0" title="${item.title}"></video>`;
+      body = `
+    <iframe
+      class="preview-frame"
+      src="${item.file}#toolbar=0"
+      title="${item.title}"
+      style="width:100%; height:70vh; border:0;"
+    ></iframe>
+  `;
     } else if (["mp4", "webm"].includes(ext)) {
-      body = `<div class="p-3 bg-dark"><video class="w-100" controls style="max-height:70vh"><source src="${item.file}"></video></div>`;
+      const mimeType = ext === "mp4" ? "video/mp4" : "video/webm";
+
+      body = `
+    <div class="p-3 bg-dark">
+      <video
+        class="w-100"
+        controls
+        preload="metadata"
+        playsinline
+        style="max-height:70vh"
+      >
+        <source src="${item.file}" type="${mimeType}">
+        Your browser does not support HTML5 video.
+      </video>
+    </div>
+  `;
     } else {
       body = `<div class="p-5 text-center text-secondary">Preview is not available for this file type. Use Download.</div>`;
     }
